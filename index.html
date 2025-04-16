@@ -4,12 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Planner</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div>
-        <button id="create_task">Crear tarea</button>
-        <button id="create_event">Crear evento</button>
+        <button id="btn_create-task">Crear tarea</button>
+        <button id="btn_create-event">Crear evento</button>
     </div>
+
+    <section>
+        <form id="create-form" class="create-form">
+          <div class="container-create-form">
+              <h1>CREAR TAREA</h1>
+          <label for="id-tasks">ID</label>
+          <input
+            type="number"
+            name="id-tasks"
+            id="id-tasks"
+            class="id-task"
+            placeholder="Escriba el numero de ID"
+            required
+          />
+          <label for="title-tasks">Titulo</label>
+          <input
+            type="text"
+            name="title-tasks"
+            id="title-tasks"
+            class="title-tasks"
+            placeholder="Escriba el título"
+            required
+          />
+          <label for="description-tasks">Descripción</label>
+          <textarea
+            name="description-tasks"
+            id="description-tasks"
+            class="description-tasks"
+            placeholder="Escriba la descripción"
+            required
+          ></textarea>
+          <label for="date-tasks">Fecha de vencimiento</label>
+          <input
+            type="date"
+            id="date-tasks"
+            name="date-tasks"
+            class="date-tasks"
+            required
+          />
+          <label for="status-tasks">Estado</label>
+          <select name="status-tasks" id="status-tasks">
+            <option value="completed" id="completed-tasks">Completada</option>
+            <option value="in_process" id="in_process-tasks">En proceso</option>
+            <option value="pending" id="pending-tasks">Pendiente</option>
+          </select>
+          <button id="btn_insert_tasks">Agregar</button>
+        </form>
+      </div>
+      </section>
+
+      <section>
+        <table id="table-tasks" class="table-tasks">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Titulo</td>
+                    <td>Descripcion</td>
+                    <td>Fecha vencimiento</td>
+                    <td>Estado</td>
+                    <td>Frase motivacional</td>
+                </tr>
+            </thead>
+            <tbody id="body_table-tasks">
+
+            </tbody>
+        </table>
+      </section>
     
 </body>
 </html>

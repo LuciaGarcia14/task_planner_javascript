@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.create-form{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url(./img/creacion_fondo_tasks.jpg);
+}
+
+.container-create-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.create-form input,
+.create-form textarea,
+.create-form select{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.create-form label{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.create-form button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.table-tasks{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-tasks th, 
+.table-tasks td {
+    background-color: aliceblue;
+    width: 310px;
+    padding: 8px;
+    border: 3px solid rgb(66, 132, 255);
+    text-align: center;
+}
